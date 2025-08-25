@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code by Ankit LLC</title>
+  <meta name="description" content="Indie software studio building pragmatic tools and clean experiences." />
+  <meta property="og:title" content="Code by Ankit LLC" />
+  <meta property="og:description" content="Indie software studio building pragmatic tools and clean experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codebyankit.com" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root { --bg:#0b0d12; --card:#121621; --text:#e6ecf1; --muted:#9fb2c3; --brand:#6ae3ff; --accent:#8b8dff; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: radial-gradient(1200px 800px at 80% -10%, #131a28 0%, #0b0d12 60%), var(--bg); color: var(--text); }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 28px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .logo { display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:0.3px; }
+    .logo-mark { width: 28px; height: 28px; border-radius:10px; background: linear-gradient(135deg, var(--brand), var(--accent)); box-shadow: 0 8px 30px rgba(106,227,255,.35); }
+    nav a { color: var(--muted); margin-left: 18px; font-size: 14px; }
+    nav a:hover { color: var(--text); }
+    .hero { display:grid; grid-template-columns: 1.2fr 0.8fr; gap: 36px; align-items:center; padding: 56px 0 24px; }
+    h1 { font-size: clamp(32px, 5vw, 56px); line-height: 1.05; margin: 0 0 16px; }
+    .lead { color: var(--muted); font-size: 18px; max-width: 60ch; }
+    .cta { display:flex; gap:12px; margin-top: 24px; }
+    .btn { padding: 12px 16px; border-radius: 12px; font-weight: 600; border: 1px solid #2a3344; background: #192031; color: #eaf6ff; }
+    .btn.primary { background: linear-gradient(135deg, var(--brand), var(--accent)); color: #07131a; border-color: transparent; }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 30px rgba(139,141,255,.22); }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border: 1px solid #22293a; border-radius: 16px; padding: 18px; }
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .section { padding: 40px 0; }
+    h2 { font-size: 22px; margin: 0 0 18px; }
+    .muted { color: var(--muted); }
+    footer { border-top: 1px solid #1e2535; margin-top: 40px; padding-top: 20px; color: var(--muted); font-size: 14px; }
+    .pill { display:inline-block; padding: 6px 10px; border-radius: 999px; background: #141a28; border:1px solid #22293a; color: var(--muted); font-size: 12px; }
+    .tag { font-size: 12px; color: #b6c7d6; }
+    @media (max-width: 880px) { .hero { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><div class="logo-mark"></div><span>Code by Ankit LLC</span></div>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <span class="pill">Indie software studio</span>
+        <h1>We build pragmatic tools with clean UX.</h1>
+        <p class="lead">Code by Ankit is a small studio shipping focused software: file transfer workflows, creator utilities, and lightweight business apps. Zero fluff, just fast products.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn" href="#products">See products</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="margin-bottom:6px">Currently building</h2>
+        <p class="muted" style="margin-top:0">Add or rename these as your projects evolve.</p>
+        <div class="grid" style="margin-top:12px">
+          <div class="card">
+            <div class="tag">Video Transfer</div>
+            <h3 style="margin:.3rem 0 .2rem">Hand‑off</h3>
+            <p class="muted">Fast wedding‑video uploads with reliable chunking + client delivery.</p>
+            <a class="btn" href="#" aria-label="Open Hand-off">Learn more</a>
+          </div>
+          <div class="card">
+            <div class="tag">Analytics</div>
+            <h3 style="margin:.3rem 0 .2rem">Fantasy Lens</h3>
+            <p class="muted">Sleeper‑powered insights and draft trends for your league.</p>
+            <a class="btn" href="#" aria-label="Open Fantasy Lens">Learn more</a>
+          </div>
+          <div class="card">
+            <div class="tag">Utilities</div>
+            <h3 style="margin:.3rem 0 .2rem">Canny‑Alt</h3>
+            <p class="muted">Lightweight feedback boards with sane pricing for indie apps.</p>
+            <a class="btn" href="#" aria-label="Open Canny Alt">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p class="muted">Code by Ankit LLC is a Colorado‑based indie studio. We ship small, useful software and iterate in public. If you’re a founder or creator and want to collaborate, reach out.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="muted">Email: <a href="mailto:ankit@codebyankit.com">ankit@codebyankit.com</a></p>
+      <p class="muted">X/Twitter: <a href="https://x.com/" target="_blank" rel="noopener">@codebyankit</a> (optional)</p>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Code by Ankit LLC • Colorado, USA</div>
+      <div style="margin-top:6px">
+        <a href="#" class="muted">Privacy</a> • <a href="#" class="muted">Terms</a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
